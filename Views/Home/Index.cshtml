@@ -1,0 +1,55 @@
+﻿@* @model IEnumerable<Product> *@
+
+@* @if (ViewBag.ShowLoginPrompt) *@
+@* { *@
+@*     <div class="alert alert-warning text-center"> *@
+@*         <p>You need to <a href="/Account/Login">Login</a> or <a href="/Account/Register">Create an Account</a> to continue shopping.</p> *@
+@*     </div> *@
+@* } *@
+
+@* <h1>Welcome to Online Shopping</h1> *@
+@* <div class="row"> *@
+@*     @foreach (var product in Model) *@
+@*     { *@
+@*         <div class="col-md-4"> *@
+@*             <div class="card mb-4 shadow-sm"> *@
+@*                 <img src="@product.ImageUrl" class="card-img-top" alt="@product.Name"> *@
+@*                 <div class="card-body"> *@
+@*                     <h5 class="card-title">@product.Name</h5> *@
+@*                     <p class="card-text">@product.Description</p> *@
+@*                     <p class="text-muted">$@product.Price</p> *@
+@*                     <a href="/Cart/AddToCart?productId=@product.Id&quantity=1" class="btn btn-primary">Add to Cart</a> *@
+@*                 </div> *@
+@*             </div> *@
+@*         </div> *@
+@*     } *@
+@* </div> *@
+
+@model IEnumerable<Product>
+
+<h1>Products</h1>
+<div class="row">
+    @foreach (var product in Model)
+    {
+        <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+                <img src="@product.ImageUrl" class="card-img-top" style="max-height: 200px; max-width: 100%; object-fit: contain;" alt="@product.Name">
+                @* <img src="@product.ImageUrl" class="card-img-top" style="height: 200px; object-fit: cover;" alt="@product.Name"> *@
+                <div class="card-body">
+                    <h5 class="card-title">@product.Name</h5>
+                    <p class="card-text">@product.Description</p>
+                    <p class="text-muted">$@product.Price.ToString("F2")</p>
+                    <form asp-action="AddToCart" asp-controller="Cart" method="post">
+                        <input type="hidden" name="productId" value="@product.Id" />
+                        <div class="mb-2">
+                            <label for="quantity" class="form-label">Quantity:</label>
+                            <input type="number" name="quantity" class="form-control" value="1" min="1" />
+                        </div>
+                        <button type="submit" class="btn btn-primary">Add to Cart</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    }
+    }
+</div>

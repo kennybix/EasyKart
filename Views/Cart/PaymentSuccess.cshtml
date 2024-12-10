@@ -1,0 +1,9 @@
+﻿@{
+    ViewData["Title"] = "Payment Success";
+}
+
+<h1>Payment Successful</h1>
+<p>@ViewBag.Message</p>
+
+<a asp-controller="Order" asp-action="Index" class="btn btn-primary">View Your Orders</a>
+<a asp-controller="Home" asp-action="Index" class="btn btn-secondary">Continue Shopping</a>

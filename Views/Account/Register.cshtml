@@ -1,0 +1,68 @@
+﻿@* @model User *@
+
+@* <h1>Register</h1> *@
+@* <form asp-action="Register" method="post"> *@
+@*     <div class="mb-3"> *@
+@*         <label asp-for="Username" class="form-label"></label> *@
+@*         <input asp-for="Username" class="form-control" /> *@
+@*         <span asp-validation-for="Username" class="text-danger"></span> *@
+@*     </div> *@
+@*     <div class="mb-3"> *@
+@*         <label asp-for="Email" class="form-label"></label> *@
+@*         <input asp-for="Email" class="form-control" /> *@
+@*         <span asp-validation-for="Email" class="text-danger"></span> *@
+@*     </div> *@
+@*     <div class="mb-3"> *@
+@*         <label asp-for="Password" class="form-label"></label> *@
+@*         <input asp-for="Password" type="password" class="form-control" /> *@
+@*         <span asp-validation-for="Password" class="text-danger"></span> *@
+@*     </div> *@
+@*     <div class="mb-3"> *@
+@*         <label asp-for="Address" class="form-label"></label> *@
+@*         <input asp-for="Address" class="form-control" /> *@
+@*         <span asp-validation-for="Address" class="text-danger"></span> *@
+@*     </div> *@
+@*     <div class="mb-3"> *@
+@*         <label asp-for="PhoneNumber" class="form-label"></label> *@
+@*         <input asp-for="PhoneNumber" class="form-control" /> *@
+@*         <span asp-validation-for="PhoneNumber" class="text-danger"></span> *@
+@*     </div> *@
+@*     <button type="submit" class="btn btn-primary">Register</button> *@
+@* </form> *@
+
+@{
+    ViewData["Title"] = "Register";
+}
+
+<div class="d-flex justify-content-center align-items-center vh-100">
+    <div class="card shadow-lg p-4" style="max-width: 400px; width: 100%;">
+        <h3 class="text-center text-primary">Register</h3>
+        <form asp-action="Register" method="post" class="mt-4">
+            <div class="mb-3">
+                <label for="Username" class="form-label">Username</label>
+                <input type="text" id="Username" name="username" class="form-control" placeholder="Choose a username" required>
+            </div>
+            <div class="mb-3">
+                <label for="Email" class="form-label">Email</label>
+                <input type="email" id="Email" name="email" class="form-control" placeholder="Enter your email" required>
+            </div>
+            <div class="mb-3">
+                <label for="Password" class="form-label">Password</label>
+                <input type="password" id="Password" name="password" class="form-control" placeholder="Choose a password" required>
+            </div>
+            <div class="mb-3">
+                <label for="ConfirmPassword" class="form-label">Confirm Password</label>
+                <input type="password" id="ConfirmPassword" name="confirmPassword" class="form-control" placeholder="Confirm your password" required>
+            </div>
+            <div class="d-grid">
+                <button type="submit" class="btn btn-primary">Register</button>
+            </div>
+            <div class="text-center mt-3">
+                <p>
+                    Already have an account?
+                    <a asp-controller="Account" asp-action="Login" class="text-primary">Login</a>
+                </p>
+            </div>
+        </form>
+    </div>
+</div>

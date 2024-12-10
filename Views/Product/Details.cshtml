@@ -1,0 +1,19 @@
+﻿@model Product
+
+<div class="card">
+    <img src="@Model.ImageUrl" class="card-img-top" style="max-height: 300px; max-width: 100%; object-fit: contain;" alt="@Model.Name">
+    @* <img src="@Model.ImageUrl" class="card-img-top" style="height: 300px; object-fit: cover;" alt="@Model.Name"> *@
+    <div class="card-body">
+        <h1>@Model.Name</h1>
+        <p>@Model.Description</p>
+        <p class="text-muted">$@Model.Price.ToString("F2")</p>
+        <form asp-action="AddToCart" asp-controller="Cart" method="post">
+            <input type="hidden" name="productId" value="@Model.Id" />
+            <div class="mb-2">
+                <label for="quantity" class="form-label">Quantity:</label>
+                <input type="number" name="quantity" class="form-control" value="1" min="1" />
+            </div>
+            <button type="submit" class="btn btn-primary">Add to Cart</button>
+        </form>
+    </div>
+</div>

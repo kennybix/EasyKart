@@ -1,0 +1,35 @@
+﻿@{
+    ViewData["Title"] = "Admin Dashboard";
+}
+
+<h1>Welcome to Admin Dashboard</h1>
+
+<div class="row mt-4">
+    <div class="col-md-4">
+        <div class="card text-white bg-primary">
+            <div class="card-body text-center">
+                <h5>Total Products</h5>
+                <p class="display-6">@ViewBag.ProductCount</p>
+                <a asp-action="ManageProducts" class="btn btn-light mt-2">Manage Products</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card text-white bg-success">
+            <div class="card-body text-center">
+                <h5>Total Users</h5>
+                <p class="display-6">@ViewBag.UserCount</p>
+                <a asp-action="ManageUsers" class="btn btn-light mt-2">Manage Users</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card text-white bg-warning">
+            <div class="card-body text-center">
+                <h5>Total Orders</h5>
+                <p class="display-6">@ViewBag.OrderCount</p>
+                <a asp-action="ManageOrders" class="btn btn-light mt-2">Manage Orders</a>
+            </div>
+        </div>
+    </div>
+</div>

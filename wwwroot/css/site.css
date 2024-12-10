@@ -1,0 +1,298 @@
+/*html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}*/
+
+/*body {
+    background: url('/images/shopping-background.png') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+main {
+    flex: 1;
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+    .card:hover {
+        transform: scale(1.05);
+    }
+
+    .card img {
+        max-height: 200px;
+        max-width: 100%;
+        object-fit: contain;*/ /* Ensures proportional resizing without cropping */
+    /*}
+
+.navbar {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.navbar-brand, .nav-link {
+    color: #fff !important;
+}
+
+    .nav-link.active {
+        font-weight: bold;
+        border-bottom: 2px solid #fff;
+    }
+
+.footer {
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+    .footer a {
+        color: #fff !important;
+        text-decoration: underline;
+    }
+
+    .footer p {
+        margin: 0;
+    }*/
+
+
+/*
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+footer {
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-grow-1 {
+    flex: 1;
+}
+*/
+/* General body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom right, #f0f8ff, #e6f7ff);
+    color: #333;
+}
+
+/* Navbar styling */
+.navbar {
+    background: #007bff;
+}
+
+.navbar-brand, .nav-link {
+    color: #fff !important;
+}
+
+    .nav-link.active {
+        font-weight: bold;
+        border-bottom: 2px solid #fff;
+    }
+
+/* Footer styling */
+.footer {
+    background: #007bff;
+    color: #fff;
+}
+
+    .footer a {
+        color: #fff !important;
+        text-decoration: underline;
+    }
+
+    .footer p {
+        margin: 0;
+    }
+
+/* Card styling */
+.card {
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+    .card h3 {
+        font-weight: bold;
+    }
+
+/* Profile page styling */
+.profile-card {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+}
+
+    .profile-card dl {
+        font-size: 16px;
+        color: #333;
+    }
+
+        .profile-card dl dt {
+            font-weight: bold;
+            color: #007bff;
+        }
+
+        .profile-card dl dd {
+            margin-bottom: 10px;
+            word-wrap: break-word;
+        }
+
+    .profile-card .btn {
+        font-size: 16px;
+        font-weight: bold;
+        text-align: center;
+        padding: 10px;
+    }
+
+/* Edit profile page styling */
+.edit-profile-card {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+    .edit-profile-card form {
+        margin-top: 20px;
+    }
+
+    .edit-profile-card label {
+        font-weight: bold;
+        color: #007bff;
+    }
+
+    .edit-profile-card input.form-control {
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin-bottom: 15px;
+    }
+
+    .edit-profile-card .btn {
+        font-size: 16px;
+        font-weight: bold;
+        text-align: center;
+        padding: 10px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+    }
+
+        .edit-profile-card .btn:hover {
+            background-color: #0056b3;
+            color: #fff;
+        }
+
+/* Form inputs styling */
+input.form-control {
+    border-radius: 5px;
+}
+
+/* Buttons styling */
+button.btn {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+/* Additional card-specific styling */
+.card img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+/* Center forms in Login, Register, Admin Login, and Edit Profile pages */
+.d-flex.vh-100 {
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Styling for responsive cards and form elements */
+@media (max-width: 768px) {
+    .card {
+        margin: 20px;
+    }
+
+    button.btn {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .profile-card dl {
+        font-size: 14px;
+    }
+
+    .edit-profile-card {
+        margin: 20px;
+    }
+}
+
+/* Text styling for headings */
+h3.text-primary, h3.text-danger {
+    font-weight: bold;
+}
+
+/* Shadows and padding for better UX */
+.shadow-lg {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15) !important;
+}
+
+.p-4 {
+    padding: 1.5rem !important;
+}
+
+.mt-4 {
+    margin-top: 1.5rem !important;
+}
+
+.mb-3 {
+    margin-bottom: 1rem !important;
+}
+
+.mt-3 {
+    margin-top: 1rem !important;
+}

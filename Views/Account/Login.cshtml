@@ -1,0 +1,28 @@
+﻿@{
+    ViewData["Title"] = "Login";
+}
+
+<div class="d-flex justify-content-center align-items-center vh-100">
+    <div class="card shadow-lg p-4" style="max-width: 400px; width: 100%;">
+        <h3 class="text-center text-primary">User Login</h3>
+        <form asp-action="Login" method="post" class="mt-4">
+            <div class="mb-3">
+                <label for="Username" class="form-label">Username</label>
+                <input type="text" id="Username" name="username" class="form-control" placeholder="Enter your username" required>
+            </div>
+            <div class="mb-3">
+                <label for="Password" class="form-label">Password</label>
+                <input type="password" id="Password" name="password" class="form-control" placeholder="Enter your password" required>
+            </div>
+            <div class="d-grid">
+                <button type="submit" class="btn btn-primary">Login</button>
+            </div>
+            <div class="text-center mt-3">
+                <p>
+                    Don't have an account?
+                    <a asp-controller="Account" asp-action="Register" class="text-primary">Register</a>
+                </p>
+            </div>
+        </form>
+    </div>
+</div>

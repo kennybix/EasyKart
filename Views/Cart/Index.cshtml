@@ -1,0 +1,34 @@
+﻿@model IEnumerable<OrderItem>
+
+<h1>Your Cart</h1>
+@if (!Model.Any())
+{
+    <p>Your cart is empty.</p>
+}
+else
+{
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Product</th>
+                <th>Quantity</th>
+                <th>Price</th>
+                <th>Total</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.Product.Name</td>
+                    <td>@item.Quantity</td>
+                    <td>$@item.Price.ToString("F2")</td>
+                    <td>$@(item.Quantity * item.Price)</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    <p><strong>Subtotal:</strong> $@ViewBag.SubTotal.ToString("F2")</p>
+    <p><strong>Total (with 13.5% GST):</strong> $@ViewBag.Total.ToString("F2")</p>
+    <a href="/Cart/Checkout" class="btn btn-primary">Checkout</a>
+}
