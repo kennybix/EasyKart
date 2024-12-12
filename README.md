@@ -147,7 +147,6 @@ dotnet run
 ![admin-login](Images/admin-login.png)
 - **Product Page**
 
-*Screenshots to be added soon.*
 
 ---
 
