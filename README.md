@@ -142,7 +142,7 @@ dotnet run
 - **Add New Product**
 ![create-product](Images/create-product.png)
 - **Manage Product**
-![manage-product](Images/manage-product.png)
+![manage-product](Images/manage-products.png)
 - **Product Page**
 ![product](Images/products.png)
 
