@@ -2,7 +2,7 @@
 
 ## Overview
 The **Online Shopping Application** is a full-stack web application designed to provide users with a seamless e-commerce experience. It features a user-friendly interface for browsing products, managing carts, and placing orders. Additionally, it includes an admin panel for managing products, orders, and users.
-
+![EazyKart](Images/homepage.png)
 ---
 
 ## Features
