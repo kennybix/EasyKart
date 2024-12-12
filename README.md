@@ -2,6 +2,7 @@
 
 ## Overview
 The **Online Shopping Application** is a full-stack web application designed to provide users with a seamless e-commerce experience. It features a user-friendly interface for browsing products, managing carts, and placing orders. Additionally, it includes an admin panel for managing products, orders, and users.
+
 ![EazyKart](Images/homepage.png)
 ---
 
@@ -121,7 +122,29 @@ dotnet run
 
 ## Screenshots
 - **Home Page**
+![homepage](Images/homepage.png)
+- **User Login**
+![user-login](Images/user-login.png)
+- **User Registration**
+![user-register](Images/user-registration.png)
+- **User Cart**
+![cart](Images/cart.png)
+- **Order Page**
+![order](Images/orders.png)
+- **Order Details**
+![order-details](Images/order-details.png)
+- **Payment**
+![payment](Images/credit-card-payment.png)
+- **Admin Login**
+![admin-login](Images/admin-login.png)
 - **Admin Dashboard**
+![admin-dash](Images/admin-dashboard.png)
+- **Add New Product**
+![create-product](Images/create-product.png)
+- **Manage Product**
+![manage-product](Images/manage-product.png)
+- **Admin Dashboard**
+![admin-login](Images/admin-login.png)
 - **Product Page**
 
 *Screenshots to be added soon.*
